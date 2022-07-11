@@ -613,6 +613,25 @@ optional = false
 python-versions = ">=3.6"
 
 [[package]]
+name = "snakedoc"
+version = "0.1.dev88+g224192b"
+description = "A Sphinx extension for Snakemake"
+category = "dev"
+optional = false
+python-versions = ">=3.7"
+develop = false
+
+[package.dependencies]
+snakemake = ">=7.6.2"
+sphinx = ">=4.3.0"
+
+[package.source]
+type = "git"
+url = "https://github.com/smutch/snakedoc.git"
+reference = "main"
+resolved_reference = "224192b109b9b77f41133787db077a1d60975d2b"
+
+[[package]]
 name = "snakemake"
 version = "7.8.5"
 description = "Snakemake is a workflow management system that aims to reduce the complexity of creating workflows by providing a fast and comfortable execution environment, together with a clean and modern specification language in python style. Snakemake workflows are essentially Python scripts extended by declarative code to define rules. Rules describe how to create output files from input files."
@@ -1279,6 +1298,7 @@ smmap = [
     {file = "smmap-5.0.0-py3-none-any.whl", hash = "sha256:2aba19d6a040e78d8b09de5c57e96207b09ed71d8e55ce0959eeee6c8e190d94"},
     {file = "smmap-5.0.0.tar.gz", hash = "sha256:c840e62059cd3be204b0c9c9f74be2c09d5648eddd4580d9314c3ecde0b30936"},
 ]
+snakedoc = []
 snakemake = [
     {file = "snakemake-7.8.5-py3-none-any.whl", hash = "sha256:def7f654c15dca8d0412535f9dd113d5a265214b077b8e7845e064a2ce8e3cfd"},
     {file = "snakemake-7.8.5.tar.gz", hash = "sha256:6a3add290f362c37c91fa5c6b34f30c776ad3012f43b6d1f1fe97b3af7687d7a"},
